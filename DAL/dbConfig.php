@@ -1,4 +1,6 @@
+
 <?php
+
 class dbConfig{
   public static $server = "mysql.hostinger.co.uk";
   public static $user="u115822113_scode";
@@ -7,4 +9,5 @@ class dbConfig{
   public static function connectDb(){
     return new mysqli($server, $user, $password, $databse);
   }
-}?>
+}
+?>
