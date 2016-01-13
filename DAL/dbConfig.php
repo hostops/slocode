@@ -7,7 +7,7 @@ class dbConfig{
   public static $database ="u115822113_forum";
   //methods
   public static function connectDb(){
-    return new mysqli($server, $user, $password, $databse);
+    return (new mysqli("$server", "$user", "$password", "$databse" ));
   }
 }
 ?>
