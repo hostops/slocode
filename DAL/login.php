@@ -1,7 +1,7 @@
 <?php
 try{
   //get posted data
-  include 'dbConfig.php';
+  //include 'dbConfig.php';
   $userName = htmlspecialchars($_POST["user"]);
   $password= htmlspecialchars($_POST["password"]);
   $sqli = new mysqli($server, $user, $password, $databse);
