@@ -4,7 +4,7 @@ try{
   //get posted data
   $userName = htmlspecialchars($_POST["user"]);
   $password= htmlspecialchars($_POST["password"]);
-  $sqli = dbConfig->connectDb();
+  $sqli = dbConfig::connectDb();
   // Check connection
   if ($sqli->connect_error) {
       $sqli->exit();
