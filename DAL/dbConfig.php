@@ -1,6 +1,6 @@
 <?php
 class dbConfig{
-  //properties test
+  //properties
   public static $server = "mysql.hostinger.co.uk";
   public static $user="u115822113_scode";
   public static $passwrod="u115822113_scode";
