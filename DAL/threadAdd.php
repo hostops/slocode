@@ -1,5 +1,5 @@
 <?php
-include("dbConfig.php");
+include "dbConfig.php";
 try{
   $title = htmlspecialchars($_POST["Title"]);
   $tags= htmlspecialchars($_POST["Tags"]);

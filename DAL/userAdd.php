@@ -1,5 +1,5 @@
 <?php
-include("dbConfig.php");
+include "dbConfig.php";
 try{
   $name = htmlspecialchars($_POST["Name"]);
   $email= htmlspecialchars($_POST["Email"]);

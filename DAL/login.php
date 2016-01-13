@@ -1,4 +1,5 @@
 <?php
+include "dbConfig.php";
 try{
   //get posted data
   $userName = htmlspecialchars($_POST["user"]);
