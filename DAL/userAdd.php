@@ -6,7 +6,7 @@ try{
   $userName = htmlspecialchars($_POST["Usrname"]);
   $password= htmlspecialchars($_POST["Pass"]);
   //connect db
-  $sqli = new mysqli($server, $user, $password, $databse);
+  $sqli = dbConfig::connectDb();
   // Check connection
   if ($sqli->connect_error) {
         echo json_encode(array( "status"=>0,"users"=>0,"emails"=>0 ));

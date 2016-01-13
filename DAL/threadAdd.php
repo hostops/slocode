@@ -8,7 +8,7 @@ try{
   $idUser= htmlspecialchars($_POST["IDUser"]);
   $idCategory= htmlspecialchars($_POST["idCategory"]);
   //db connect
-  $sqli = new mysqli($server, $user, $password, $databse);
+  $sqli = dbConfig::connectDb();
   // Check connection
   if ($sqli->connect_error) {
         echo "<script>window.location.href = '/notavailable.php';</script>";

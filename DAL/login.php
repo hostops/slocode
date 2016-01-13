@@ -1,8 +1,10 @@
 <?php
+include 'dbConfig.php';
 try{
+  //get posted data
   $userName = htmlspecialchars($_POST["user"]);
   $password= htmlspecialchars($_POST["password"]);
-  $sqli = new mysqli($server, $user, $password, $databse);
+  $sqli = dbConfig::connectDb();
   // Check connection
   if ($sqli->connect_error) {
       $sqli->exit();
