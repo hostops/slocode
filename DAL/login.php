@@ -1,8 +1,5 @@
 <?php
-$s=include "dbConfig.php";
-if($==false){
-  echo "error"
-}
+include('dbConfig.php');
 try{
   //get posted data
   $userName = htmlspecialchars($_POST["user"]);
