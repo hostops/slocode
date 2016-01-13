@@ -1,0 +1,82 @@
+/*ipad landscape*/
+@media only screen and (max-width: 1174px) {
+
+#body .content {
+    position: absolute;
+    width: 90%;
+    top: 100px;
+    left: 50%;
+    margin: 100px 0 0 -410px !important;
+}
+
+#body .content .card {
+    width: 400px;
+}
+
+#body .content .card .forum {
+    background-position: center;
+}
+}
+
+/*ipad portrait, smartphone*/
+@media only screen and (max-width: 934px) {
+
+#body .content {
+    margin: 100px 0 0 -200px !important;
+    width: 70%;
+}
+
+#body .content .button .forum {
+    background-size: 360px 200px;
+    background-position-y: 20px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-color: #202020;
+    background-position: center;
+    width: 350px;
+}
+
+#body .content .button .title.pic {
+    position: absolute;
+    left: 20px;
+    height: 315px;
+    bottom: 300px !important;
+    font-size: 40px;
+    bottom: 20px;
+}
+
+#body .content .button .ask {
+    width: 350px;
+    height: 200px;
+}
+}
+
+
+/*mini smartphones*/
+@media only screen and (max-width: 400px) {
+
+#body .content {
+    position: absolute;
+    width: 90%;
+    top: 100px;
+    left: 55%;
+    margin: 100px 0 0 -50% !important;
+}
+
+#body .content .card {
+    width: 100%;
+    height:200px;
+}
+
+
+#body .content .button .forum {
+    background-size: 360px 200px;
+    background-position-y: 30px; !important;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-color: #202020;
+    background-position: center;
+    width: 100%;
+}
+}
+

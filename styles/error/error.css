@@ -1,0 +1,220 @@
+/*wholeSite*/
+body {
+    background-color: #EEE;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+
+}
+#body{
+	text-align:center;
+	margin-top:160px;
+}
+/*header*/
+	header .toolbar {
+		background-color: #212121;
+		height: 80px;
+		z-index: 500;
+		top: 0;
+		left: 0;
+		right:0;
+		position: absolute;
+		transition: box-shadow 0.2s;
+    background-size: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 400;
+	}
+/*--title*/
+	header .toolbar .title {
+		position: absolute;
+		color:white;
+		left: 0;
+		top:0;
+		right:0;
+		height:80px;
+		padding:25px 25px;
+		font-size:40px;
+    font-weight: 400;
+	}
+		header .toolbar .title h1 {
+			font-weight: 400;
+			font-size: 50px;
+		}
+/*--sticky*/
+		header .toolbar #sticky {
+			position:absolute;
+			background-color: #212121;
+			width: 100%;
+			height: 70px;
+			z-index: 100;
+			top: 80px;
+			left: 0px;
+			box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.4);
+		}
+		header .toolbar #sticky.stick {
+			position: fixed;
+			top: 0;
+			left:0;
+			z-index: 1000;
+		}
+			header .toolbar #sticky ul {
+				width: 95%;
+				left: 20px;
+				position: absolute;
+				padding: 0;
+				margin: 0;
+				list-style-type: none;
+			}
+			header .toolbar #sticky a {
+				float: left;
+				width: 6em;
+				text-decoration: none;
+				padding: 0.2em 0.6em;
+				color: rgba(255, 255, 255, 0.3);
+			}
+			header .toolbar #sticky a:not(.active){
+				animation: animateColorNormal 0.5s forwards;
+			}
+			header .toolbar #sticky a.active {
+				color: white;
+			}
+			header .toolbar #sticky a:not(.active):hover {
+				animation: animateColorWhite 0.5s forwards;
+			}
+/*animations*/
+@keyframes animateColorWhite {
+	to {color: white;}
+}
+@keyframes animateColorNormal {
+	from {color: white;}
+	to {color: rgba(255, 255, 255, 0.3);}
+}
+
+
+/*Where Am I*/
+
+  .error {
+    text-align: center;
+    color: #212121;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    top: 200px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .error.mini {
+    text-align: center;
+    color: #212121;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: 200px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /*slocode*/
+
+  .slocode h1 {
+color: #e6e6e6;
+    position: fixed;
+    right: 0;
+    bottom: -135px;
+    font-size: 800%;
+    font-weight: 400;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    16% {
+        opacity: 1;
+    }
+    84% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    16% {
+        opacity: 1;
+    }
+    84% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.itsnotyou {
+    margin: 0 auto;
+    opacity: 0;
+    text-align: center;
+    -webkit-animation: fadeOut 4s;
+    animation: fadeOut 4s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    16% {
+        opacity: 0;
+    }
+    84% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    16% {
+        opacity: 0;
+    }
+    84% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fixingit {
+    top: -26px;
+    position:relative;
+    margin: 0 auto;
+    opacity: 1;
+    text-align: center;
+    -webkit-animation: fadeIn 4s;
+    animation: fadeIn 4s;
+}
+			

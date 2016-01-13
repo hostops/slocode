@@ -1,0 +1,16 @@
+*2*-BUG-je pa tko. v index.php navadnem. maš v home.css kazalce na .card
+v forum/home.css pa ni nobenega kazalca na .card
+
+*3* še osale forum strani (Odprt thread(z komentarji), odprt category(tema)(ki vserbuje threade))
+                        oblika naj bo navadni forum. Un forum za vprašanja bo kasnej.
+*4* mobilne kartice so mal cudne
+*4* mobilni login se ne prikazuje previlno.
+*5* nekoč naredi še profilno stran
+*5* poskrbi da bo pri registraciji preverjanje podatkov z html.
+        glej: http://www.w3schools.com/tags/att_input_required.asp
+              http://www.w3schools.com/tags/att_input_pattern.asp
+        Še ostale možnosti : http://www.w3schools.com/tags/tag_input.asp
+*5* Tko kot si naredu notaviable.html enkrat naredi še eno stran da je brez dovoljenj za dostop do te strani
+## *5* Se vedno je rdeče. mobile chrome naj ma pri forumu zeleno uno na vrh (uno v meta tagih).
+## *4*na novo tutorial page ker ne dela lepo pravilno
+## *4* Vprašaj strokovnjaka popravi - brez imena in maila (itak bo prijavljen) more met pa selectbox za kategorijo mogoče. bo kasnej da se da še brez prijave.

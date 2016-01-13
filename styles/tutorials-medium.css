@@ -1,0 +1,13 @@
+@media only screen and (min-width: 1100px) {
+
+  #body .card.menu-nav {
+		display: inline-block;
+		width: 200px;
+		background-color: #fff;
+		box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+		border-radius: 2px;
+		left: 20px;
+		bottom: 10px;
+		position:fixed;
+	}
+}

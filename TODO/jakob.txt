@@ -1,0 +1,12 @@
+*4* prikazvanje thread
+*4* *znizal prioriteto prvo morejo ostale stvari obstajat* search na forumu pa na forumu da se prkazujejo zadnji vnosi
+*4* comment
+*4* *bom ko bo čs ni bistveno* na strani z tutoriali ce lahko nardis da ko klikns na sliko da se poveca pa kodo za zapret sliko. Ko bos naredu mi povej pa bom js pol dizajn naredu.
+*5* new thread potrebni še popravki amapk dela
+
+## *2* baza, sistem tabel povezovanje
+## *1* popravu sm forum da ne reloada, zj pa od nekje on dobiva mal napacn css a lahko to pogledas ker mi ni jasn
+## *3* dodajanje userja
+## *3* login
+## *1* poglej zakaj .dialog vpliva na content
+## *5* prijava dela na tipko enter

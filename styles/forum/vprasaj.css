@@ -1,0 +1,151 @@
+/*content*/
+.vprasaj {
+position: absolute;
+    left: 50%;
+    margin: 0 0 0 -125px;
+}
+.regError{
+  display: none;
+  color:orange;
+}
+#Recaptcha{
+  margin-left: 5%;
+  display: table;
+}
+#Raised {
+ background-color: #2E7D32;
+ border-radius: 3px;
+ box-shadow: 0 5px 13px rgba(0,0,0,0.2);
+ height: 36px;
+ display: inline-block;
+ list-style-type: none;
+ text-decoration: none;
+ color: #fff;
+ width: 120px;
+ transition: all 300ms ease-in-out 0s ;
+ line-height: 32px;
+ text-align: center;
+ cursor: pointer;
+ border:none;
+ float: right;
+ position: relative;
+ right: 5%;
+ margin-top: 100px;
+ margin-bottom: 20px;
+}
+
+#Raised > paper-ripple {
+border-radius: 2px;
+overflow: hidden;
+}
+
+#Raised:active {
+ box-shadow: 0 11px 14px rgba(0,0,0,0.3);
+}
+
+#Name, #Email, #Vpr, #Usrname, #Pass, #Title, #Tags, #vprasaj, .cleditorMain{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 90%;
+  margin: 0 0 15px 0;
+  padding: 0;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  transition: all .3s;
+  margin-bottom: 20px;
+}
+#Name, #Email, #Vpr, #Usrname, #Pass, #Title, #Tags,.cleditorMain {
+font-size: 1rem;
+}
+
+#Name:focus, #Email:focus, #Vpr:focus, #Usrname:focus, #Pass:focus,.cleditorMain:focus, #Title:focus, #Tags:focus, #vprasaj:focus, #Content:focus {
+  border-bottom: 1px solid #2E7D32;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+
+#sent {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 240px;
+  vertical-align: top;
+  background-color: #fff;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+}
+
+.vprasaj.c {
+    position: absolute;
+    display: inline-block;
+    width: 500px;
+    min-height: 360px;
+    vertical-align: top;
+    background-color: #fff;
+    box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.title.form {
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 40px;
+  color: #2E7D32;
+}
+
+.label {
+  text-align: left;
+  margin-left: 40px;
+  color: gray;
+}
+
+/*dropdown*/
+
+.md.dropdown {
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 40px;
+    margin-top: 20px;
+    color: #2E7D32;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 21px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    width: 120px;
+}
+
+option {
+    color: gray;
+    outline-color: #fff;
+    /* text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); */
+    font-weight: 300;
+}
+
+.registration.c {
+  position: absolute;
+  display: inline-block;
+  width: 60%;
+  min-height: 360px;
+  vertical-align: top;
+  background-color: #fff;
+  box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.registration {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    margin: 0px 0 0 -35%;
+}

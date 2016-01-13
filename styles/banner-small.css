@@ -1,0 +1,38 @@
+@media only screen and (max-width: 700px) {
+header .toolbar #sticky a {
+  float: left;
+  width: 6em;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  left: 25px;
+  bottom: 10px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+header .toolbar #sticky ul {
+  width: 80%;
+  left: 12%;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+header .toolbar #sticky {
+  position:absolute;
+  background-color: #F44336;
+  width: 100%;
+  height: 80px;
+  z-index: 100;
+  top: 80px;
+  left: 0px;
+  box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.4);
+}
+
+#body {
+    text-align: center;
+    margin-top: 160px;
+    width: 108%;
+    left: -15px;
+}

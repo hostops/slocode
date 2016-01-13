@@ -1,0 +1,120 @@
+/*content*/
+
+	#body .forum {
+		position: absolute;
+		width: 100%;
+
+	}
+
+		#body .forum .search {
+			margin-bottom: 10px;
+			position: relative;
+			background-color: #fff;
+			border-radius: 3px;
+			box-shadow: 0 5px 11px rgba(0,0,0,0.2);
+			height: 46px;
+			display:inline-block;
+			top: 30px;
+			list-style-type: none;
+			text-decoration: none;
+			color: #9E9E9E;
+			width: 75%;
+			transition: all 200ms ease-in-out 0s;
+			line-height: 46px;
+		}
+
+		#body .search img {
+			position:absolute;
+			left: 9px;
+			top: 9px;
+			height: 30px;
+		}
+
+		#body .search input {
+			background-color: rgba(255, 255, 255, 0);
+			position: relative;
+			width: 100%;
+			line-height: 39px;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-color: rgba(255, 255, 255, 0);
+			border-radius: 0px 0px 3px 3px;
+			font-size: 18px;
+			padding-left: 50px;
+		}
+
+		#body .search input:focus {
+			outline: none;
+			text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+			color: #424242;
+		}
+
+		#body .forum .title {
+			position: relative;
+			left: 50%;
+		}
+
+		.forum .list {
+			margin-top: 10px;
+			padding-top: 0px;
+			margin-bottom: 10px;
+			position: relative;
+			background-color: #fff;
+			border-radius: 3px;
+			height: auto;
+			display:inline-block;
+			top: 30px;
+			color: #212121;
+			width: 70%;
+			transition: all 200ms ease-in-out 0s;
+			line-height: auto;
+		}
+
+		.list.item {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-width: 1px;
+			min-height: 46px;
+			top:0px;
+			height: auto;
+			border-color: #eee;
+			border-bottom-style: solid;
+			border-radius: 0px;
+			width: 100%;
+			position: relative;
+		}
+
+
+		.fab {
+		border-radius: 50%;
+		box-shadow: 0 5px 11px rgba(0,0,0,0.2);
+		position: fixed;
+		right: 30px;
+		bottom: 25px;
+		width: 50px;
+		height:50px;
+		background-color: #2E7D32;
+		color: #fff;
+		line-height: 50px;
+		font-size: 40px;
+		transition: all 300ms ease-in-out 0ms;
+	}
+
+		.fab:active {
+		box-shadow: 0 7px 11px rgba(0,0,0,0.3);
+		}
+
+		.fab img {
+			width: 30px;
+			position: relative;
+			top:-1px;
+		}
+
+		.fab > paper-ripple {
+		border-radius: 2px;
+		overflow: hidden;
+		}

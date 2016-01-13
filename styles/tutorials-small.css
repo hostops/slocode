@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1020px) {
+
+#body  .card.menu {
+  position: absolute;
+  width: 102.1%;
+  background-color: #fff;
+  box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  top:150px;
+  left:-18px;
+  background-size: contain;
+
+}
+
+#body .tutorial .card {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  top:350px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 7px 18px rgba(0,0,0,0.2);
+  height: 250px;
+  display:inline-block;
+}
+
+#body .tutorial .card.subject{
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 90%;
+  min-height: 500px;
+  height: auto;
+  padding: 15px 15px 15px 15px;
+  left: 0px;
+}
+
+
+#body .card.menu-nav {
+  display: none;
+}
+
+
+#body .tutorial {
+    left: 0px;
+    right: 0px;
+    top: -90px;
+    width: 100%;
+    position: absolute;
+}
+
+#body .tutorial .card.subject img {
+    max-width: 100%;
+    float: none;
+}
+
+.navigation {
+  display: none;
+
+}
