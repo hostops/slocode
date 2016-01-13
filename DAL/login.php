@@ -1,6 +1,7 @@
 <?php
-include("dbConfig.php");
+
 try{
+  include("dbConfig.php");
   //get posted data
   $userName = htmlspecialchars($_POST["user"]);
   $password= htmlspecialchars($_POST["password"]);
