@@ -1,5 +1,5 @@
 <?php
-class dbConfig{ 
+class dbConfig{
   //properties
   public static $server = "mysql.hostinger.co.uk";
   public static $user="u115822113_scode";
@@ -10,4 +10,5 @@ class dbConfig{
     return new mysqli($server, $user, $password, $databse);
   }
 }
- ?>
+echo "2";
+?>
