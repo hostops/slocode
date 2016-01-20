@@ -1,0 +1,1 @@
+CREATE TABLE `category` (  `ID_Category` varchar(36) CHARACTER SET utf8 COLLATE utf8_slovenian_ci NOT NULL,  `Category` varchar(2048) CHARACTER SET utf32 COLLATE utf32_unicode_ci NOT NULL,  PRIMARY KEY (`ID_Category`)) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci

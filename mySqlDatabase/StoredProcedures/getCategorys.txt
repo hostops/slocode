@@ -1,0 +1,5 @@
+CREATE PROCEDURE `getCategorys`()
+BEGIN
+SELECT 	ID_Category,Category
+FROM  `category`;
+END

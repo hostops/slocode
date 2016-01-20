@@ -1,0 +1,22 @@
+CREATE PROCEDURE `openThread`(
+IN id VARCHAR(36) CHARACTER SET UTF8 COLLATE utf8_slovenian_ci
+)
+BEGIN
+SELECT
+t.ID_Thread,
+t.ID_Author,
+t.ID_Category,
+t.Date,
+t.Title,
+t.Content,
+t.Content_text,
+t.Tags,
+c.ID_Comment,
+c.ID_User as CommentUser,
+c.Date as CommentDate,
+c.Content as CommentContent
+FROM  `thread` t
+LEFT JOIN commentThread c
+ON t.ID_Thread=c.ID_Thread
+WHERE c.ID_Thread=id;
+END

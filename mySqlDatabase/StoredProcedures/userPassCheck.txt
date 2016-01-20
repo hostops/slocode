@@ -1,0 +1,17 @@
+CREATE DEFINER=`u115822113_scode`@`localhost` PROCEDURE `userPassCheck`(
+    IN user VARCHAR( 2048 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci,
+    IN pass VARCHAR( 2048 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci
+)
+BEGIN
+    SELECT COUNT(*), Name, ID_User
+    INTO @a, @n, @i
+    FROM users u
+    WHERE u.Password = pass AND u.User=user;
+
+    IF @a = 1 THEN
+	SELECT TRUE AS Result, @n AS Name, @i AS ID_User;
+    ELSE
+       SELECT FALSE AS Result, "" AS Name, "" AS ID_User;
+    END IF;
+
+END

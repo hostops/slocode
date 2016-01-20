@@ -1,0 +1,23 @@
+CREATE PROCEDURE `userAdd`(
+    IN us VARCHAR( 2048 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci,
+    IN password VARCHAR( 2048 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci,
+    IN name VARCHAR( 2048 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci,
+    IN em VARCHAR( 256 ) CHARACTER SET UTF8 COLLATE utf8_unicode_ci
+)
+BEGIN
+    SET @id = (SELECT UUID());
+    SET @created = ( NOW() + INTERVAL 1 HOUR );
+    CREATE TEMPORARY TABLE ex (U VARCHAR( 2048 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci, E VARCHAR( 256 ) CHARACTER SET UTF8 COLLATE utf8_unicode_ci);
+    INSERT INTO ex SELECT User, Email FROM users u WHERE u.User = us OR u.Email = em;
+    /*make table and store it as variable*/
+    SELECT COUNT(*) INTO @u FROM ex WHERE ex.U=us;
+    SELECT COUNT(*) INTO @e FROM ex WHERE ex.E=em;
+    IF @u=0 AND @e =0 THEN
+        INSERT INTO `users`(`ID_User`, `User`, `Password`, `Name`, `Email`, `Admin`, `CreationDate`) VALUES (@id,us,password,name,em,FALSE,@created);
+    	SELECT 1 AS Success, @u AS Users, @e AS Emails;
+        /*if there are no same emails or users add user and send success*/
+    ELSE
+    	SELECT 0 AS Success, @u AS Users, @e AS Emails;
+        /*if there are same emails or users send failed and where are same*/
+    END IF;
+END

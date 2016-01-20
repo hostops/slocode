@@ -1,0 +1,1 @@
+CREATE TABLE `topic` (  `ID_Topic` varchar(36) CHARACTER SET utf8 COLLATE utf8_slovenian_ci NOT NULL,  `Topic` varchar(2048) CHARACTER SET utf32 COLLATE utf32_unicode_ci NOT NULL,  PRIMARY KEY (`ID_Topic`)) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci

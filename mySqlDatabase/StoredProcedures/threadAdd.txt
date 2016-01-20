@@ -1,0 +1,14 @@
+CREATE PROCEDURE `threadAdd`(
+    IN idAuthor VARCHAR(36) CHARACTER SET UTF8 COLLATE utf8_slovenian_ci,
+    IN idCategory VARCHAR(36) CHARACTER SET UTF8 COLLATE utf8_slovenian_ci,
+    IN title VARCHAR( 2048 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci,
+    IN content VARCHAR( 65536 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci,
+    IN contentText VARCHAR( 65536 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci,
+    IN tags VARCHAR( 256 ) CHARACTER SET UTF32 COLLATE utf32_unicode_ci
+)
+BEGIN
+    SET @id = (SELECT UUID());
+    SET @created = ( NOW() + INTERVAL 1 HOUR );
+    INSERT INTO `thread`(`ID_Thread`, `ID_Author`, `ID_Category`, `Date`, `Title`, `Content`, `Content_text`, `Tags`) VALUES (@id,idAuthor,idCategory,@created,title,content,contentText,tags);
+    SELECT @id AS ID;
+END
