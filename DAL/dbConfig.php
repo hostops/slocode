@@ -1,6 +1,6 @@
 <?php
 class dbConfig{
-  //properties
+  //properties test
   public static $server = "mySqlServer";
   public static $user="user";
   public static $passwrod="password";
