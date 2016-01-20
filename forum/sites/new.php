@@ -1,9 +1,9 @@
 <?php
-include("dbConfig.php");
+include("../../DAL/dbConfig.php");
 try{
   $userName = htmlspecialchars($_POST["user"]);
   $password= htmlspecialchars($_POST["password"]);
-  $sqli = dbConfig->connectDb();
+  $sqli = dbConfig::connectDb();
 	$error=false;
 	// Check connection
   if ($sqli->connect_error) {
