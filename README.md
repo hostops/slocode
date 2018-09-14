@@ -1,5 +1,5 @@
 # SloCode
-![GitHub](https://img.shields.io/github/license/jakobhostnik/slocode.svg)
+![GitHub](https://img.shields.io/github/license/jakobhostnik/slocode.svg?)
 ![Maintenance](https://img.shields.io/maintenance/no/2016.svg)  
 
 A forum built from scratch using php for learning programming and web technologies.
